@@ -21,15 +21,15 @@
         echo "<br>";
         if($porcentaje >= 81){
 
-            echo "<img src='/desarrollo7/Lab4/Lab4.1/img/green.PNG'>";
+            echo "<img src='/desarrollo7/Lab4/Lab41/img/green.PNG'>";
 
         }elseif($porcentaje <=80 && $porcentaje>60){
 
-            echo "<img src='/desarrollo7/Lab4/Lab4.1/img/yellow.PNG'>";
+            echo "<img src='/desarrollo7/Lab4/Lab41/img/yellow.PNG'>";
             
         }elseif($porcentaje<=60){
 
-            echo "<img src='/desarrollo7/Lab4/Lab4.1/img/red.PNG'>";
+            echo "<img src='/desarrollo7/Lab4/Lab41/img/red.PNG'>";
         }
     ?>
     
