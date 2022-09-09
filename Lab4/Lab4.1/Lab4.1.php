@@ -7,25 +7,29 @@
     <title>Laboratorio 4.1</title>
 </head>
 <body>
-    <h3>Aplicación web con imagen dinámica</h3>
-    <p>Desempeño de ventas realizadas <input type="text" name="valorV" /></p>
-    
+
+    <form method="post" action="Lab4.1.php">
+        <h3>Aplicación web con imagen dinámica</h3>
+         <p>Desempeño de ventas realizadas <input type="text" name="valorV" />
+         <input type="submit" value="Calcular" /></p>
+    </form>
+
     <?php 
         echo "<br>";
         $valor = (int)$_POST['valorV'];
         $porcentaje = ($valor / 100) * 100;
-        Header (Content-type: imgage/png);
         echo "<br>";
-        if($porcentaje >= 80){
+        if($porcentaje >= 81){
+
+            echo "<img src='/desarrollo7/Lab4/Lab4.1/img/green.PNG'>";
+
+        }elseif($porcentaje <=80 && $porcentaje>60){
+
+            echo "<img src='/desarrollo7/Lab4/Lab4.1/img/yellow.PNG'>";
             
-            $img = imagecreatefrompng(img/green.PNG);
-            imagepng ($img);
-        }elseif($porcentaje >= 50 && $porcentaje<=79){
-            $img = imagecreatefrompng(img/yellow.PNG);
-            imagepng ($img);
-        }else{
-            $img = imagecreatefrompng(img/red.PNG);
-            imagepng ($img);
+        }elseif($porcentaje<=60){
+
+            echo "<img src='/desarrollo7/Lab4/Lab4.1/img/red.PNG'>";
         }
     ?>
     
