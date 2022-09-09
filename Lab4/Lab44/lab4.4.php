@@ -9,10 +9,13 @@
 <body>
     <h3>Manejo de Arreglos P2</h3>
     <?php
+        $x = 1;
         do{
      ?>
 
-        <p>Ingrese un número <input type="text" name="valorP" /></p>
+        <form method = "POST" action="lab4.4.php">
+             <p>Ingrese un número <input type="text" name="valorP"></p>
+        </form>
     
     <?php
         
@@ -21,9 +24,11 @@
             $arregloPar = new SplFixedArray($contador);
     
             if(($valor / 2) == 0){
-                for($i = $contador; $i<=$arregloPar->getSize(); $i++){
-                $arregloPar = $valor;
+
+                    for($i = $contador; $i<=$arregloPar->getSize(); $i++){
+                    $arregloPar = $valor;
                 }
+                
     ?>
 
             <p>¿Desea añadir otro número S/N? <input type="text" name="resp" /></p>
@@ -35,6 +40,7 @@
             }else{
                 $resp = 'S';
             }
+            
         }while($resp == 'S');
         
         for($i = 0; $i<=$arregloPar->getSize(); $i++){
