@@ -20,7 +20,7 @@
                         for($n2=1;$n2<=$m_size;$n2++)
                         {   
                             if($unit==$n2){
-                                echo"<td bgcolor=#bdc3d6>",1,"</td>";
+                                echo"<td bgcolor=#bdc3d6>",random_int(int $min, int $max): int,"</td>";
                             }
                             else{
                                 echo "<td>",0,"</td>";
@@ -38,7 +38,7 @@
             }
             ?>
         <FORM ACTION="lab45.php" METHOD="POST">
-
+ 
             <br><br>Ingrese el tamaño de la matriz : <input type="text" name="num"><br><br>
             <input type="submit" name= "enviar" value="Ingresar">
 
