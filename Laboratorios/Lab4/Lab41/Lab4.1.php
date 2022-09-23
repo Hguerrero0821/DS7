@@ -20,15 +20,15 @@
         echo "<br>";
         if($valor >= 81){
 
-            echo "<img src='/desarrollo7/Lab4/Lab41/img/green.PNG'>";
+            echo "<img src='/desarrollo7/Laboratorios/Lab4/Lab41/img/green.PNG'>";
 
         }elseif($valor <=80 && $valor>60){
 
-            echo "<img src='/desarrollo7/Lab4/Lab41/img/yellow.PNG'>";
+            echo "<img src='/desarrollo7/Laboratorios/Lab4/Lab41/img/yellow.PNG'>";
             
         }elseif($valor<=60){
 
-            echo "<img src='/desarrollo7/Lab4/Lab41/img/red.PNG'>";
+            echo "<img src='/desarrollo7/Laboratorios/Lab4/Lab41/img/red.PNG'>";
         }
     ?>
     
